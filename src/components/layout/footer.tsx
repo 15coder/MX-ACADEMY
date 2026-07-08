@@ -84,7 +84,7 @@ export function Footer() {
             <div className="absolute -inset-4 rounded-3xl bg-white/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             <p className="relative text-xs font-medium text-primary-foreground/45 tracking-widest uppercase">
-              تصميم وبرمجة
+              تقدُمة
             </p>
 
             <div className="relative inline-flex items-center gap-3 rounded-2xl border border-white/15 bg-white/8 backdrop-blur-sm px-6 py-3 shadow-lg shadow-black/20 group-hover:border-white/25 group-hover:bg-white/12 transition-all duration-300">
