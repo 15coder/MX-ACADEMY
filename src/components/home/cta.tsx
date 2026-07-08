@@ -60,7 +60,7 @@ export function Cta() {
           </ContactDialog>
 
           <p className="mt-5 sm:mt-6 text-xs sm:text-sm text-primary-foreground/60">
-            يرد على الاستفسارات د. أ. أحمد عنزو وأ. معن الخلف مباشرة
+            يرد على الاستفسارات أ. د . أحمد عنزو وأ. معن الخلف مباشرة
           </p>
         </motion.div>
       </div>

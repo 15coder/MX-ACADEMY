@@ -29,9 +29,9 @@ const teachersData: { ninth: Teacher[]; scientific: Teacher[] } = {
   ],
   scientific: [
     { subject: "رياضيات", name: "معن الخلف" },
-    { subject: "فيزياء",  name: "أحمد عنزو", title: "د." },
-    { subject: "كيمياء",  name: "أحمد عنزو", title: "د." },
-    { subject: "عربي",    name: "زكريا بلال وظلال طرشة" },
+    { subject: "فيزياء",  name: "أحمد عنزو", title: "أ. د ." },
+    { subject: "كيمياء",  name: "أحمد عنزو", title: "أ. د ." },
+    { subject: "عربي",    name: "زكريا بلال والأستاذة ظلال طرشة" },
     { subject: "علوم",    name: "زكريا رجب باشا" },
     { subject: "إنجليزي", name: "معن حاج اسماعيل" },
     { subject: "فرنسي",   name: "أيمن العبد الله" },

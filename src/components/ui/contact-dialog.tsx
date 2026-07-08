@@ -4,7 +4,7 @@ import { MessageCircle, X } from "lucide-react";
 
 const admins = [
   {
-    name: "د. أ. أحمد عنزو",
+    name: "أ. د . أحمد عنزو",
     phone: "0945867745",
     wa: "https://wa.me/963945867745",
   },
