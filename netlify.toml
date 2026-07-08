@@ -5,6 +5,24 @@
 [build.processing.html]
   pretty_urls = false
 
+# ─── Security headers (applied to every response) ────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent embedding in iframes (clickjacking)
+    X-Frame-Options = "DENY"
+    # Block MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+    # Don't send referrer to cross-origin requests
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Restrict browser features not used by this site
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    # Force HTTPS for 1 year
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Basic CSP — allows self + WhatsApp/Maps external links
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; font-src 'self' data:; frame-ancestors 'none';"
+
+# ─── Content-type overrides ───────────────────────────────────────────────────
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
