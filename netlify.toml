@@ -2,7 +2,14 @@
   command = "pnpm install && pnpm build"
   publish = "dist/public"
 
-# Serve sitemap/robots at trailing-slash URLs without redirect (rewrite = 200)
+# Disable Pretty URLs — prevents Netlify from 301-redirecting /sitemap.xml → /sitemap.xml/
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = false
+
+# Serve sitemap/robots at trailing-slash URLs as rewrite (200, no redirect)
 [[redirects]]
   from = "/sitemap.xml/"
   to = "/sitemap.xml"
@@ -26,6 +33,7 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
+    X-Robots-Tag = "noindex"
 
 [[headers]]
   for = "/sitemap.xml/"
