@@ -1,4 +1,4 @@
-import { ExternalLink, MessageCircle } from "lucide-react";
+import { Code2, MessageCircle, Sparkles } from "lucide-react";
 import { ContactDialog } from "@/components/ui/contact-dialog";
 
 const navLinks = [
@@ -76,20 +76,38 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-primary-foreground/35 order-2 sm:order-1">
+        <div className="mt-10 border-t border-white/10 pt-8 flex flex-col items-center gap-5">
+
+          {/* Credit card — prominent & modern */}
+          <div className="relative group flex flex-col items-center gap-3">
+            {/* Glow */}
+            <div className="absolute -inset-4 rounded-3xl bg-white/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+            <p className="relative text-xs font-medium text-primary-foreground/45 tracking-widest uppercase">
+              تصميم وبرمجة
+            </p>
+
+            <div className="relative inline-flex items-center gap-3 rounded-2xl border border-white/15 bg-white/8 backdrop-blur-sm px-6 py-3 shadow-lg shadow-black/20 group-hover:border-white/25 group-hover:bg-white/12 transition-all duration-300">
+              {/* Icon left */}
+              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-violet-400/30 to-fuchsia-400/20 border border-white/10 shrink-0">
+                <Code2 className="h-4 w-4 text-violet-300" />
+              </span>
+
+              {/* Name */}
+              <span className="text-base font-bold tracking-wide text-white">
+                م. مروَة عقّاد
+              </span>
+
+              {/* Sparkle right */}
+              <Sparkles className="h-4 w-4 text-fuchsia-300/70 shrink-0 group-hover:text-fuchsia-300 transition-colors duration-300" />
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-xs text-primary-foreground/30">
             © {new Date().getFullYear()} أكاديمية ماكس مارك — جميع الحقوق محفوظة
           </p>
-          <a
-            href="https://needaa.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-primary-foreground/50 hover:text-primary-foreground transition-colors order-1 sm:order-2"
-          >
-            <span>تصميم وبرمجة</span>
-            <span className="font-bold text-white">نداء الرحمن عبود</span>
-            <ExternalLink className="h-3 w-3 shrink-0" />
-          </a>
+
         </div>
 
       </div>
