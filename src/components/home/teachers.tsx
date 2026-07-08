@@ -33,7 +33,8 @@ const teachersData: { ninth: Teacher[]; scientific: Teacher[] } = {
     { subject: "كيمياء",  name: "أحمد عنزو", title: "د." },
     { subject: "عربي",    name: "زكريا بلال وظلال طرشة" },
     { subject: "علوم",    name: "زكريا رجب باشا" },
-    { subject: "فرنسي",   name: "معن حاج اسماعيل" },
+    { subject: "إنجليزي", name: "معن حاج اسماعيل" },
+    { subject: "فرنسي",   name: "أيمن العبد الله" },
     { subject: "ديانة",   name: "فاضل نيال" },
   ],
 };
